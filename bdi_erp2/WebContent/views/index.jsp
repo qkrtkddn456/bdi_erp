@@ -52,7 +52,7 @@ if(menu==null || menu.equals("home")){
             var menuObj = document.querySelector('#' + menu);
             menuObj.classList.add('active');
             var smenu = '<%=smenu%>';
-            if(menu!='null'){
+            if(smenu!='null'){
             	document.querySelector('#'+menu+'>a').setAttribute('aria-expanded',true);
             	document.querySelector('#'+menu+'>ul').setAttribute('aria-expanded',true);
             	document.querySelector('#'+menu+'>ul').classList.add('in');

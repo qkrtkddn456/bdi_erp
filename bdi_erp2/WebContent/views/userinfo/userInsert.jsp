@@ -42,17 +42,17 @@
 </div>
 <script>
 	function checkVal(){
-		var objs = document.querySelectorAll('input')
+		var objs = document.querySelectorAll('input');
 		for(var i=0;i<objs.length;i++){
 			if(objs[i].type!="number"){
 				if(objs[i].value.length<1 || objs[i].value.length>=30){
-					alert(objs[i].name + "의 값을 확인해주세요.")
+					alert(objs[i].name + "의 값을 확인해주세요.");
 					objs[i].focus();
 					return false;
 				}
 			}else{
 				if(objs[i].value<1){
-					alert(objs[i].name + "의 값을 확인해주세요.")
+					alert(objs[i].name + "의 값을 확인해주세요.");
 					objs[i].focus();
 					return false;
 				}

@@ -34,7 +34,7 @@ if(rs.next()){
 		<table class="table table-bordered">
 			<tr>
 				<th>번호</th>
-				<td></td>
+				<td><%=uiNo%></td>
 			</tr>
 			<tr>
 				<th>이름</th>
@@ -68,6 +68,7 @@ if(rs.next()){
 			</tr>
 		</table>
 	</fieldset>
+	<input type="hidden" name="uiNo" value="<%=uiNo%>">
 </form>
 </div>
 <script>
